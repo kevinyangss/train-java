@@ -1,0 +1,9 @@
+/.settings/
+.project
+.classpath
+/target/
+/bin/
+*.iml
+/.idea/
+*.bat
+node_modules/
