@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * 线程计数器
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class CyclicBarrierTest {
     public static void main(String[] args) {

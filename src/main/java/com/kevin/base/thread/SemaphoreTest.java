@@ -8,7 +8,7 @@ import java.util.concurrent.Semaphore;
  * 信号灯
  * 可以维护当前访问自身的线程个数，并提供了同步机制。可以控制同事访问资源的线程个数。
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class SemaphoreTest {
     public static void main(String[] args) {

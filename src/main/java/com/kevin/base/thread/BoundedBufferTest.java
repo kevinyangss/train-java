@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 阻塞缓冲
  *
- * @author yangshuaishuai
+ * @author kevin.yang
  */
 public class BoundedBufferTest {
 

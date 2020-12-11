@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class ProxyTest {
     public static void main(String[] args) throws Exception {

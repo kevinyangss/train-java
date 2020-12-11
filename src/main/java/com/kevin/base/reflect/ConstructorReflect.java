@@ -7,7 +7,7 @@ import java.lang.reflect.Constructor;
 /**
  * 构造方法的反射
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class ConstructorReflect extends BaseApp {
     public static void main(String[] args) throws Exception {

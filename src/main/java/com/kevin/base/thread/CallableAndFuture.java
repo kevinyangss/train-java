@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 /**
  * 得到线程运行结果
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class CallableAndFuture {
     public static void main(String[] args) throws Exception {

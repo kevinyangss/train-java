@@ -9,7 +9,7 @@ import java.util.*;
 
 /**
  * 泛型 测试类
- * @author kevin
+ * @author kevin.yang
  */
 public class GenericTest extends BaseApp {
     public static void main(String[] args) throws Exception {

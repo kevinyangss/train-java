@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class BeanFactory {
     Properties props = new Properties();

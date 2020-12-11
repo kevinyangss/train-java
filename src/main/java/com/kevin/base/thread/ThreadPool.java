@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 线程池
- * @author yangshuaishuai
+ * @author kevin.yang
  */
 public class ThreadPool {
     public static void main(String[] args) {

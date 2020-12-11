@@ -5,7 +5,7 @@ import com.kevin.base.BaseApp;
 /**
  * @ClassName BasicDataTypeTest
  * @Description 基本数据类型测试
- * @Author kevin
+ * @Author kevin.yang
  * @Date 2020-12-11 20:11
  */
 public class BasicDataTypeTest extends BaseApp {

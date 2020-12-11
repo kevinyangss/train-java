@@ -3,7 +3,7 @@ package com.kevin.base.thread;
 /**
  * 传统线程
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class TraditionalThread {
     public static void main(String[] args) throws Exception {

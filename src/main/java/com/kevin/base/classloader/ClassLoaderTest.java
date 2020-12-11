@@ -1,7 +1,7 @@
 package com.kevin.base.classloader;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class ClassLoaderTest {
 

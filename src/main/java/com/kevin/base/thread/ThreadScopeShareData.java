@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class ThreadScopeShareData {
     private static Map<Thread, Integer> threadData = new HashMap<Thread, Integer>();

@@ -3,7 +3,7 @@ package com.kevin.base.reflect;
 /**
  * 反射就是把java类中的各种成分映射成相应的java类
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class ReflectTest {
     public static void main(String[] args) throws Exception {

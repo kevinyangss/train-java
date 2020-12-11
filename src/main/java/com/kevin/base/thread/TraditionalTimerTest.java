@@ -5,7 +5,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class TraditionalTimerTest {
     private static int count = 0;

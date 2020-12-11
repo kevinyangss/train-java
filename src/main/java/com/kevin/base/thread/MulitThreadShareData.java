@@ -3,7 +3,7 @@ package com.kevin.base.thread;
 /**
  * 多线程共享数据
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class MulitThreadShareData {
     private static ShareData2 sd3 = new ShareData2();

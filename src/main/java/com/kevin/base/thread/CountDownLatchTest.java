@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * 倒计时计数器
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class CountDownLatchTest {
     public static void main(String[] args) {

@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class UrlOpenConnection {
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 线程锁	替换synchronized
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class LockTest {
     public static void main(String[] args) {

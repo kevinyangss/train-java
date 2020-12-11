@@ -1,7 +1,7 @@
 package com.kevin.base.thread;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class TraditionalSynchronizedTest {
     public static void main(String[] args) {

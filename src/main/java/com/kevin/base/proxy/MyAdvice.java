@@ -3,7 +3,7 @@ package com.kevin.base.proxy;
 import java.lang.reflect.Method;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class MyAdvice implements Advice
 {

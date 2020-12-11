@@ -7,7 +7,7 @@ import java.io.OutputStream;
 
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class MyClassLoader {
 

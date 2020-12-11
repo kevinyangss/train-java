@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * 交换
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class ExchangerTest {
     public static void main(String[] args) {

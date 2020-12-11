@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class ProxyFactoryBean {
     private Advice advice;

@@ -1,7 +1,7 @@
 package com.kevin.base.reflect;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class ReflectPoint {
 	private int x;

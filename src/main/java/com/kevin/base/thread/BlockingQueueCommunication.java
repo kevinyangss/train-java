@@ -6,7 +6,7 @@ import java.util.concurrent.BlockingQueue;
 /**
  * 数组阻塞队列
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class BlockingQueueCommunication {
     public static void main(String[] args) {

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.WeakHashMap;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class WeakHashMapTest {
     public static void main(String[] args) throws Exception {

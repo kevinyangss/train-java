@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class CacheDemo {
     private Map<String, Object> cache = new HashMap<String, Object>();

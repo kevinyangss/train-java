@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 /**
  * 字段的反射
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class FieldReflect {
     public static void main(String[] args) throws Exception {

@@ -3,7 +3,7 @@ package com.kevin.base.thread;
 /**
  * 传统线程同步
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class TraditionalThreadSynchronized {
     public static void main(String[] args) {

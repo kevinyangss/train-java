@@ -9,7 +9,7 @@ import java.lang.ref.WeakReference;
  * java四种引用类型:强引用、软引用、弱引用、虚引用
  * jdk 1.2之前只有强引用，1.2以后多了三个引用，软引用、弱引用、虚引用
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class ReferenceTest {
     public static void main(String[] args) {

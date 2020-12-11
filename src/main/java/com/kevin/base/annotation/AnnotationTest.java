@@ -2,7 +2,7 @@ package com.kevin.base.annotation;
 
 /**
  * java注解
- * @author kevin
+ * @author kevin.yang
  */
 //@KevinAnnotation(value = "abc", annotationAttr = @MetaAnnotation("kevin"))
 @KevinAnnotation(color = "red", value = "abc", annotationAttr = @MetaAnnotation("kevin"))

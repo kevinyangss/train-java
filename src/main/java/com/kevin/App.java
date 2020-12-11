@@ -1,8 +1,7 @@
 package com.kevin;
 
 /**
- * Hello world!
- *
+ * @Author kevin.yang
  */
 public class App 
 {

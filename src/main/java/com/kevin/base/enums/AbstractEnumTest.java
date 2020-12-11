@@ -1,7 +1,7 @@
 package com.kevin.base.enums;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 
 public enum AbstractEnumTest {

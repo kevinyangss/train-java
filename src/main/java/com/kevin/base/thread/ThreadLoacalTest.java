@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * 线程间的变量共享
  *
- * @author kevin
+ * @author kevin.yang
  */
 public class ThreadLoacalTest {
 

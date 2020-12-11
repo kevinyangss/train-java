@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * @author kevin
+ * @author kevin.yang
  */
 public class ReadWriteLockTest {
     public static void main(String[] args) {
