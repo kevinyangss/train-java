@@ -1,15 +1,17 @@
 package com.kevin.base.generic;
 
+import com.kevin.base.BaseTest;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.*;
 
 /**
- * 泛型
+ * 泛型 测试类
  * @author kevin
  */
-public class GenericTest {
+public class GenericTest extends BaseTest {
     public static void main(String[] args) throws Exception {
         ArrayList collection1 = new ArrayList();
         collection1.add(1);
@@ -19,9 +21,11 @@ public class GenericTest {
         ArrayList<Integer> collection2 = new ArrayList<Integer>();
         //编译完成后就没有了泛型的类型信息
         collection2.getClass().getMethod("add", Object.class).invoke(collection2, "abc");
-        System.out.println(collection2.get(0));
 
+        System.out.println(collection2.get(0));
+        // 打印集合元素
         printCollection(collection2);
+        printline();
 
         HashMap<String, Integer> maps = new HashMap<String, Integer>();
         maps.put("xx", 19);
@@ -29,17 +33,26 @@ public class GenericTest {
         maps.put("aa", 13);
         Set<Map.Entry<String, Integer>> entrySet = maps.entrySet();
         for (Map.Entry<String, Integer> entry : entrySet) {
-            System.out.println(entry.getKey() + ":" + entry.getValue());
+            System.out.println("key : " + entry.getKey() + ", value : " + entry.getValue());
         }
+        printline();
 
-        System.out.println(autoConvert("abs"));
+        // 泛型
+        String s = autoConvert("abs");
+        println("autoConvert result : " + s);
+        printline();
 
-        //通过反射获得泛型的实际类型参数
+        // 通过反射获得泛型的实际类型参数
         Method applyMethod = GenericTest.class.getMethod("applyVector", Vector.class);
+        // 获取方法的形参，返回一个 按声明顺序的参数类型 数组
         Type[] types = applyMethod.getGenericParameterTypes();
+        // 第一个形参
         ParameterizedType pType = (ParameterizedType) types[0];
+        // 类型
         System.out.println(pType.getRawType());
+        // 参数信息
         System.out.println(pType.getTypeName());
+        // 返回表示此类型的实际类型参数的{@code Type}对象数组。
         System.out.println(pType.getActualTypeArguments()[0]);
         System.out.println(pType.getOwnerType());
     }
@@ -58,7 +71,8 @@ public class GenericTest {
         for (Object obj : collection) {
             System.out.println(obj);
         }
-        System.out.println(collection.size());
+
+        System.out.println("collection size : " + collection.size());
     }
 
     /**
