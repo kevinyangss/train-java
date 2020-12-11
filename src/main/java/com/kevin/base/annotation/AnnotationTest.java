@@ -4,6 +4,7 @@ package com.kevin.base.annotation;
  * java注解
  * @author kevin
  */
+//@KevinAnnotation(value = "abc", annotationAttr = @MetaAnnotation("kevin"))
 @KevinAnnotation(color = "red", value = "abc", annotationAttr = @MetaAnnotation("kevin"))
 public class AnnotationTest {
     /**
@@ -16,7 +17,7 @@ public class AnnotationTest {
         sayHello();
         if (AnnotationTest.class.isAnnotationPresent(KevinAnnotation.class)) {
             KevinAnnotation annotation = (KevinAnnotation) AnnotationTest.class.getAnnotation(KevinAnnotation.class);
-            //调用注解的属性，还是方法形式调用
+            // 调用注解的属性，还是方法形式调用
             System.out.println(annotation.color());
             System.out.println(annotation.value());
             System.out.println(annotation.annotationAttr());
