@@ -6,7 +6,7 @@ package com.kevin.base;
  * @Author yangshuaishuai
  * @Date 2020-12-11 18:26
  */
-public class BaseTest {
+public class BaseApp {
 
     /**
      * 打印

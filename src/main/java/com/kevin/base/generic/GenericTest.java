@@ -1,6 +1,6 @@
 package com.kevin.base.generic;
 
-import com.kevin.base.BaseTest;
+import com.kevin.base.BaseApp;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
@@ -11,7 +11,7 @@ import java.util.*;
  * 泛型 测试类
  * @author kevin
  */
-public class GenericTest extends BaseTest {
+public class GenericTest extends BaseApp {
     public static void main(String[] args) throws Exception {
         ArrayList collection1 = new ArrayList();
         collection1.add(1);

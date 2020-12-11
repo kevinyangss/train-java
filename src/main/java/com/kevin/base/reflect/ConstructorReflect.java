@@ -1,5 +1,7 @@
 package com.kevin.base.reflect;
 
+import com.kevin.base.BaseApp;
+
 import java.lang.reflect.Constructor;
 
 /**
@@ -7,18 +9,18 @@ import java.lang.reflect.Constructor;
  *
  * @author kevin
  */
-public class ConstructorReflect {
+public class ConstructorReflect extends BaseApp {
     public static void main(String[] args) throws Exception {
         Constructor[] constructors = String.class.getConstructors();
         for (Constructor constructor : constructors) {
-            System.out.println(constructor.getDeclaringClass().getName());
+            println(constructor.getDeclaringClass().getName());
         }
 
         //获取什么类型的构造方法
         Constructor constructor = String.class.getConstructor(StringBuffer.class);
         //要用到和上面相同类型的实例对象
-        String s = (String) constructor.newInstance(new StringBuffer("yss"));
-        System.out.println(s);
+        String s = (String) constructor.newInstance(new StringBuffer("abc"));
+        println(s);
     }
 
 }
