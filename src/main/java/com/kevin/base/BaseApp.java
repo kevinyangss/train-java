@@ -1,5 +1,7 @@
 package com.kevin.base;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * @ClassName BaseTest
  * @Description 测试基础类
@@ -12,11 +14,11 @@ public class BaseApp {
      * 打印
      * @param string
      */
-    public static void println(String string){
-        System.out.println(string);
-    }
-
-    public static void printline(){
-        System.out.println("<========================>");
+    public static void println(String string, boolean isTip){
+        if (isTip){
+            System.out.println(String.format("<=========== %s =============>", string));
+        } else {
+            System.out.println(String.format("$$ %s $$", string));
+        }
     }
 }

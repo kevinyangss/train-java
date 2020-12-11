@@ -25,7 +25,7 @@ public class GenericTest extends BaseApp {
         System.out.println(collection2.get(0));
         // 打印集合元素
         printCollection(collection2);
-        printline();
+        println("collection", true);
 
         HashMap<String, Integer> maps = new HashMap<String, Integer>();
         maps.put("xx", 19);
@@ -35,12 +35,12 @@ public class GenericTest extends BaseApp {
         for (Map.Entry<String, Integer> entry : entrySet) {
             System.out.println("key : " + entry.getKey() + ", value : " + entry.getValue());
         }
-        printline();
+        println("map", true);
 
         // 泛型
         String s = autoConvert("abs");
-        println("autoConvert result : " + s);
-        printline();
+        println("autoConvert result : " + s, false);
+        println("泛型", true);
 
         // 通过反射获得泛型的实际类型参数
         Method applyMethod = GenericTest.class.getMethod("applyVector", Vector.class);
