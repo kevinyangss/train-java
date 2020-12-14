@@ -18,6 +18,10 @@ public class BasicDataTypeTest extends BaseApp {
         // 溢出
         println("overflow", true);
         overFlow();
+
+        // 装箱 & 拆箱
+        println("boxing & unboxing", true);
+        boxing();
     }
 
     /**
@@ -32,6 +36,9 @@ public class BasicDataTypeTest extends BaseApp {
         println("i (" + i + ") + j (" + j + ") = k (" + k + ")", false);
     }
 
+    /**
+     * equals
+     */
     private static void equals(){
         int i = 10;
         Integer j = 10;
@@ -43,5 +50,21 @@ public class BasicDataTypeTest extends BaseApp {
         println("(Integer)128 == (Integer)128 : " + ((Integer)128 == (Integer)128), false);
         // 如过==两边有一边是装箱类型，另外一边是基本类型，则把装箱类型拆箱为基本类型，然后进行比较。
         println("(Integer)128 == 128 : " + ((Integer)128 == 128), false);
+    }
+
+    /**
+     * 装箱 & 拆箱
+     */
+    private static void boxing(){
+        Integer integer = 1;// 装箱
+        int i = integer;// 拆箱
+
+        println("Integer: " + integer + ", int: " + i, false);
+
+        // 自动装箱都是通过包装类的valueOf()方法来实现的
+        Integer integer1 = Integer.valueOf(1);
+        // 自动拆箱都是通过包装类对象的xxxValue()来实现的
+        int j = integer1.intValue();
+        println("Integer: " + integer1 + ", int: " + j, false);
     }
 }
