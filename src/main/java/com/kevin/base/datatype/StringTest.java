@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 /**
  * @ClassName StringTest
- * @Description TODO
+ * @Description 字符串操作
  * @Author yangshuaishuai
  * @Date 2020-12-14 16:26
  */
@@ -25,6 +25,14 @@ public class StringTest extends BaseApp {
         // replaceAll
         println("replaceAll", true);
         replaceAll();
+
+        // replaceFirst
+        println("replaceFirst", true);
+        replaceFirst();
+
+        // substring
+        println("substring", true);
+        substring();
     }
 
     /**
@@ -62,4 +70,23 @@ public class StringTest extends BaseApp {
         println(String.format("replaceAll origin val: %s, final val: %s", str, matcher.replaceAll("Java")), false);
     }
 
+    /**
+     * 替换第一个符合正则的数据
+     */
+    private static void replaceFirst(){
+        String str = "正则表达式 Hello World,正则表达式 Hello World";
+        Pattern pattern = Pattern.compile("正则表达式");
+        Matcher matcher = pattern.matcher(str);
+
+        // 替换所有符合正则的数据
+        println(String.format("replaceFirst origin val: %s, final val: %s", str, matcher.replaceFirst("Java")), false);
+    }
+
+    /**
+     * 字符串截取
+     */
+    private static void substring(){
+        String str = "abcdef";
+        println(String.format("replaceAll origin val: %s, final val: %s", str, str.substring(1, 3)), false);
+    }
 }
