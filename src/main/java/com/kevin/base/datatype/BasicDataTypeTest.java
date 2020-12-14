@@ -22,10 +22,6 @@ public class BasicDataTypeTest extends BaseApp {
         // 装箱 & 拆箱
         println("boxing & unboxing", true);
         boxing();
-
-        // 字符串的不可变性
-        println("new string", true);
-        newString();
     }
 
     /**
@@ -70,21 +66,6 @@ public class BasicDataTypeTest extends BaseApp {
         // 自动拆箱都是通过包装类对象的xxxValue()来实现的
         int j = integer1.intValue();
         println("Integer: " + integer1 + ", int: " + j, false);
-    }
-
-    /**
-     * 字符串的不可变性
-     */
-    private static void newString(){
-        String s = "abcd";
-        String s1 = s;
-
-        println("s == s1: " + (s == s1), false);
-        println("s equals s1: " + (s.equals(s1)), false);
-
-        s1 = s.concat("ef");
-        println("s == s1: " + (s == s1), false);
-        println("s equals s1: " + (s.equals(s1)), false);
     }
 
 
