@@ -148,7 +148,7 @@ public class StringTest extends BaseApp {
         long t3 = System.currentTimeMillis();
         String str1 = "abc";
         for (int i = 0; i < 50000; i++) {
-            str1 = str1.concat("," + i);
+            str1 = str1.concat(",").concat(String.valueOf(i));
         }
         long t4 = System.currentTimeMillis();
         println(String.format("concat cost: %s", (t4 - t3)), false);
