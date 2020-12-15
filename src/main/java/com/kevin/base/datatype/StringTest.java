@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 /**
  * @ClassName StringTest
  * @Description 字符串操作
- * @Author yangshuaishuai
+ * @Author kevin.yang
  * @Date 2020-12-14 16:26
  */
 public class StringTest extends BaseApp {
