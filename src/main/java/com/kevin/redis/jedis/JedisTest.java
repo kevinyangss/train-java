@@ -29,6 +29,7 @@ public class JedisTest {
         int connection_timeout=2000;
         int so_timeout=5000;
         logger.info("history_redis_ip :" + ip);
+        // redis设置了密码则赋值
         String password = "";
         redisUtil = new RedisUtil(jedisPoolConfig, ip, port, connection_timeout, so_timeout, password);
         logger.info("end init redis ---------------------------------------------------");
