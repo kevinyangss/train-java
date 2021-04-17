@@ -22,12 +22,14 @@ public class BagTest extends BaseApp {
         bag.add("c");
         bag.add("d",3);
 
+        // 获取次数
         System.out.println("d is present " + bag.getCount("d") + " times.");
         System.out.println("bag: " +bag);
         System.out.println("Unique Set: " +bag.uniqueSet());
 
         println("", true);
 
+        // 删除 2次
         bag.remove("d",2);
         System.out.println("2 occurences of d removed from bag: " +bag);
         System.out.println("d is present " + bag.getCount("d") + " times.");
